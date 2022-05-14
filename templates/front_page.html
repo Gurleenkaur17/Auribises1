@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Didactic</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .home {
+            min-height: 100vh;
+            width: 100%;
+            background: url("https://mocah.org/uploads/posts/1143452-white-depth-of-field-books-blurred-paper-vintage-writing-ART-color-eye-shape-design-organ-close-up.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .logo {
+            position: relative;
+            top: 90%;
+            max-height: 100%;
+            max-width: 100%;
+            width: 180px;
+            height: 100px;
+            background: url("https://o.remove.bg/downloads/51ce61cc-5446-4bd6-a900-21c2fddd3f5a/Screenshot__362_-removebg-preview.png");
+            float: left;
+            background-size: cover;
+        }
+
+        .head {
+            display: inline-block;
+            color: black;
+        }
+
+        .head a {
+
+            color: black;
+            text-decoration: none;
+        }
+
+        .head li {
+            float: left;
+            list-style: none;
+            margin: 20px 15px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .head li a:hover {
+            text-decoration-line: underline;
+            color: black;
+            transition: 1s;
+        }
+
+        #left {
+            display: inline-block;
+            float: left;
+            color: rgb(10, 10, 10);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+
+        #mid {
+            position: relative;
+            left: 380px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #right {
+            position: absolute;
+            right: 100px;
+            border-width: 1px;
+            border-radius: 2mm;
+            line-height: 0.1;
+            border: 2px solid black;
+            position: relative;
+            left: 770px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+
+
+        img {
+            display: inline-block;
+            max-width: 75px;
+            float: left;
+
+            position: relative;
+            bottom: 12px
+        }
+
+        .text {
+            color: rgb(5, 5, 5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text h1 {
+            font-size: 70px;
+            font-weight: 6000px;
+            font-family: 'Pushster', cursive;
+        }
+
+        .text p {
+            margin: 3px 0 3px;
+            font-size: 20px;
+            font-family: 'Pushster', cursive;
+        }
+
+        .hero-btn {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+
+            font-family: 'Pushster', cursive;
+        }
+
+        .hero-btn:hover {
+            border: 1px solid rgb(211, 111, 18);
+            background: rgb(211, 111, 18);
+            transition: 1s;
+
+        }
+
+        .course {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .course h1 {
+            font-size: 46px;
+            font-weight: 600;
+        }
+
+        .course p {
+            color: rgb(44, 39, 39);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .row {
+            margin: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex-basis: 45%;
+            background: rgb(247, 235, 235);
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            transition: 0.5s;
+        }
+
+        .column:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .review {
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .review h1 {
+            font-size: 46px;
+            font-weight: 600;
+        }
+
+
+
+        .test-row {
+            margin: 2% 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .test-col {
+            flex-basis: 44%;
+            background: rgb(247, 235, 235);
+            border-radius: 5px;
+            box-sizing: border-box;
+            border-spacing: 50px;
+            margin-bottom: 2%;
+            padding: 20px 40px;
+            transition: 0.5s;
+        }
+
+        .test-col:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-col img {
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 30px;
+            border-radius: 50%;
+        }
+
+        .test-col p {
+            padding: 0;
+            float: inline-end;
+        }
+
+        .test-col h3 {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .cta {
+            margin: 110px;
+            width: 80%;
+            background: url(https://media.swncdn.com/via/22618-istockgetty-images-plusdrazen-zigic-3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            border-radius: 10px;
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        .cta h1 {
+            color: white;
+            font-size: 30px;
+            margin-bottom: 30px;
+            padding: 1px;
+        }
+
+        .hero-btn1 {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 15px;
+            background: rgb(211, 111, 18);
+        }
+
+        .hero-btn1:hover {
+            border: 1px solid rgb(214, 208, 202);
+            background: gray;
+            transition: 1s;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home">
+
+        <div class="logo"></div>
+        <div class="head" id="mid">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a>Contact Us</a></li>
+        </div>
+
+        <div class="head" id="right">
+            <li><a>Email Us</a></li>
+            <li><a href="/login">Login</a></li>
+        </div>
+        <div class="text">
+            <h1>Grover Tutorials</h1>
+            <p>
+                "Education is the most powerful weapon which you can use to change the world" – Nelson Mandela.
+            </p>
+            <a href="/home" class="hero-btn">Register Here</a>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer......</p>
+        <div class="row">
+            <div class="column">
+                <h3>Maths</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti nihil voluptate iure quos
+                    quibusdam culpa molestiae tempore ex, incidunt dolore dicta numquam esse voluptatibus aperiam
+                    similique, unde, consequatur rem?</p>
+
+            </div>
+            <div class="column">
+                <h3>Science</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti nihil voluptate iure quos
+                    quibusdam culpa molestiae tempore ex, incidunt dolore dicta numquam esse voluptatibus aperiam
+                    similique, unde, consequatur rem?</p>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <h1>What Our Students Say</h1>
+        <div class="test-row">
+            <div class="test-col">
+                <img
+                    src="data:image/jpeg;base64,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">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quasi blanditiis natus
+                        quibusdam! Sapiente, fugiat eaque, reprehenderit dolorem dolorum consequuntur quia, veritatis
+                        similique facilis aspernatur voluptates ipsum optio nesciunt natus!</p>
+                    <h3>Fionna</h3>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+
+                </div>
+            </div>
+            <div class="test-col">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAH3NCOcopYsxZs8O35ZNkfM-TYBO-WDl94w&usqp=CAU">
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quidem quae veritatis quia nulla
+                        eveniet ex officiis fugiat quod, modi repudiandae commodi vitae fugit hic rerum molestias harum
+                        assumenda recusandae.</p>
+                    <h3>John</h3>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="con"></div>
+        <h1>Enroll For Various Courses <br> From Anywhere</h1>
+        <a href="#" class="hero-btn1">CONTACT US</a>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi commodi possimus sapiente repudiandae nisi
+            consequuntur libero, tenetur <br> exercitationem consectetur deleniti doloremque corporis in vel, odit vitae
+            sit! Magni, eveniet!</p>
+        <i class="material-icons">facebook</i>
+        <i class="material-icons">whatsapp</i>
+        <i class="material-icons">linkedin</i>
+        <p>Made with <i class="glyphicon glyphicon-heart"></i> by Gurleen Kaur Grover</p>
+
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .home {
+            min-height: 100vh;
+            width: 100%;
+            background: url("https://mocah.org/uploads/posts/1143452-white-depth-of-field-books-blurred-paper-vintage-writing-ART-color-eye-shape-design-organ-close-up.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .logo {
+            position: relative;
+            top: 90%;
+            max-height: 100%;
+            max-width: 100%;
+            width: 180px;
+            height: 100px;
+            background: url("https://o.remove.bg/downloads/51ce61cc-5446-4bd6-a900-21c2fddd3f5a/Screenshot__362_-removebg-preview.png");
+            float: left;
+            background-size: cover;
+        }
+
+        .head {
+            display: inline-block;
+            color: black;
+        }
+
+        .head a {
+
+            color: black;
+            text-decoration: none;
+        }
+
+        .head li {
+            float: left;
+            list-style: none;
+            margin: 20px 15px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .head li a:hover {
+            text-decoration-line: underline;
+            color:white;
+            transition: 0.5s;
+        }
+
+        #left {
+            display: inline-block;
+            float: left;
+            color: rgb(10, 10, 10);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+
+        #mid {
+            position: relative;
+            left: 380px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #right {
+            position: absolute;
+            right: 100px;
+            border-width: 1px;
+            border-radius: 2mm;
+            line-height: 0.1;
+            border: 2px solid black;
+            position: relative;
+            left: 730px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+
+
+
+        #right {
+            position: absolute;
+            right: 10px;
+            border-width: 1px;
+            border-radius: 2mm;
+            line-height: 0.1;
+            border: 2px solid black;
+            position: relative;
+            left: 770px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+
+        img {
+            display: inline-block;
+            max-width: 75px;
+            float: left;
+
+            position: relative;
+            bottom: 12px
+        }
+
+        input[type=text] {
+            border-radius: 80px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: rgb(31, 25, 25);
+            width: 70%;
+            padding: 8px 12px;
+            margin: 11px 0;
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+
+        h4 {
+            color: rgb(214, 209, 210);
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top: 20px;
+            right: 80px;
+        }
+
+        .container {
+            max-width: 700px;
+            height: 280px;
+            width: 30%;
+            border: 2px solid beige;
+            border-radius: 5%;
+            position: relative;
+            top: 110px;
+            left: 520px;
+            background-color: #05050469;
+        }
+
+        button {
+            background-color: black;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            border-radius: 8px;
+            color: blanchedalmond;
+            width: 77%;
+            height: 30px;
+            position: relative;
+            top: 60px;
+            left: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="home">
+
+        <div class="logo"></div>
+        <div class="head" id="mid">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Courses</a></li>
+            <li><a>Contact Us</a></li>
+        </div>
+
+        <div class="head" id="right">
+            <li><a>Email Us</a></li>
+            <li><a href="/login">Login</a></li>
+        </div>
+    <div class="container">
+
+        <form action="/auth" method ="post">
+            <h4>Enter Login Data</h4>
+            <p><input type="text" id="name" name="name" placeholder="Enter Your Name"></p>
+            <p><input type="text" id="password" name="password" placeholder="Enter Your password"></p>
+            <button type="submit" value="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
